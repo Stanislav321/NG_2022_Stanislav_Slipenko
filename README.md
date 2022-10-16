@@ -1,0 +1,1 @@
+# NG_2022_Stanislav_Slipenko
