@@ -1,8 +1,5 @@
 wrote = int(input('Number for the pyramid: '))
-list = []
-while wrote>=1:
-    list.append(wrote)
-    wrote -= 1
-while len(list):
-    print(' '.join(map(str, list)))
-    del(list[0])
+for i in range(wrote):
+    for r in range(wrote - i, 0, -1):
+        print(r, end=' ')
+    print()
