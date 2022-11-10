@@ -1,6 +1,6 @@
 wrote = int(input('The number for the factorial: '))
-list3 = 1
+factorialis  = 1
 while wrote>=1:
-    list3 *= wrote
+    factorialis  *= wrote
     wrote -= 1
-print(list3)
+print(factorialis )
