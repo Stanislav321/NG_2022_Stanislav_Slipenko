@@ -1,5 +1,5 @@
 wrote = int(input('Number for the pyramid: '))
-for i in range(wrote):
-    for r in range(wrote - i, 0, -1):
-        print(r, end=' ')
+for elem in range(wrote):
+    for secondelem in range(wrote - elem, 0, -1):
+        print(secondelem, end=' ')
     print()
