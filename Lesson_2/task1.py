@@ -1,9 +1,11 @@
-alphabet = ('abcdefghijklmnopqrstuvwxyz')
+def count(string):
+    Object = {}
+    for elem in string:
+        if elem in Object:
+            Object[elem] +=  1
+        else:
+            Object[elem]=1
+    Object = dict(sorted(Object.items(), reverse = True, key=lambda x: x[1]))
+    return Object
 text = input('Enter text: ')
-for i in  alphabet:
-    once = 0
-    for r in text:
-        if i == r:
-            once += 1
-    if once > 0:
-        print(i,'-',once)
+print(count(text))
