@@ -1,11 +1,9 @@
-def count(string):
-    Object = {}
-    for elem in string:
-        if elem in Object:
-            Object[elem] +=  1
-        else:
-            Object[elem]=1
-    Object = dict(sorted(Object.items(), reverse = True, key=lambda x: x[1]))
-    return Object
 text = input('Enter text: ')
-print(count(text))
+text = list(text)
+text.sort()
+copy_element  = 0
+for elem in text:
+    if elem == copy_element:
+        continue
+    copy_element  = elem
+    print(elem,"-",text.count(elem))
